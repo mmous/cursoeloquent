@@ -33,4 +33,10 @@ class QueryController extends Controller {
         return view('delete');
     }
 
+    public function flist() {
+        $users = User::orderBy('name', 'ASC')
+                ->pluck('name', 'id');
+        return view('lists', compact('users'));
+    }
+
 }

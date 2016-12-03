@@ -19,5 +19,10 @@
                 Lista de usuarios Genero: Femenino
             </a>
         </li>
+        <li>
+            <a href="{{ route('lists') }}">
+                Lista de Usuarios para select
+            </a>
+        </li>
     </ul>
 </li>
