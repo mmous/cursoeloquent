@@ -9,13 +9,7 @@
     </h3>
     <table class="table table-hover table-striped">
         <thead>
-            <tr>
-                <th>ID</th>
-                <th>Nombre</th>
-                <th>Email</th>
-                <th>Genero</th>
-                <th>Biografia</th>
-            </tr>
+            @include('partials.headUsers')
         </thead>
         <tbody>
             @include('partials.listUsers')

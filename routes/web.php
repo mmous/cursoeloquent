@@ -29,6 +29,11 @@ Route::get('/get/{gender}', [
     'uses' => 'QueryController@getGet'
 ]);
 
+Route::delete('/delete/{id}', [
+    'as' =>  'delete',
+    'uses' => 'QueryController@delete'
+]);
+
 //Route::get('/crear', function () {
 //    $faker = Faker::create('es_AR');
 //
