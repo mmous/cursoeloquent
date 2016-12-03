@@ -24,6 +24,11 @@ Route::get('/all', [
     'uses' => 'QueryController@getAll'
 ]);
 
+Route::get('/get/{gender}', [
+    'as' =>  'get',
+    'uses' => 'QueryController@getGet'
+]);
+
 //Route::get('/crear', function () {
 //    $faker = Faker::create('es_AR');
 //

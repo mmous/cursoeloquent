@@ -23,7 +23,17 @@
                         <ul class="dropdown-menu">
                             <li>
                                 <a href="{{ route('all') }}">
-                                    Todos los usuarios (ALL)
+                                    Lista de usuarios todos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ route('get','m') }}">
+                                    Lista de usuarios Genero: Masculino
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ route('get','f') }}">
+                                    Lista de usuarios Genero: Femenino
                                 </a>
                             </li>
                         </ul>
