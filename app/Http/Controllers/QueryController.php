@@ -8,7 +8,9 @@ use App\User;
 class QueryController extends Controller {
 
     public function getAll() {
-        $users = User::all();
+//        $users = User::all();
+        $users = User::orderBy('id', 'DESC')
+                ->paginate();
         $title = 'Todos';
         return view('methods', compact('title', 'users'));
     }

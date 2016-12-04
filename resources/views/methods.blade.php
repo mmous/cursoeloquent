@@ -7,6 +7,7 @@
     <h3 class="h3">
         {{ $title }}
     </h3>
+    <p>{{ $users->total() }} Registros | Pagina {{ $users->currentPage() }} de {{ $users->lastPage() }} </p>
     <table class="table table-hover table-striped">
         <thead>
             @include('partials.headUsers')
@@ -15,5 +16,6 @@
             @include('partials.listUsers')
         </tbody>
     </table>
+    {!! $users->render() !!}
 </div>
 @stop
